@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import { get } from 'lodash';
 import {
   Header,
@@ -14,10 +14,8 @@ import {
   Item,
   Comment,
 } from 'semantic-ui-react';
-import BlogTitle from '../components/BlogTitle';
 import { DiscussionEmbed } from 'disqus-react';
 import withLayout from '../components/Layout';
-import { graphql } from 'gatsby';
 
 const BlogPostPage = props => {
   const { frontmatter, html, timeToRead } = props.data.post;
@@ -67,7 +65,6 @@ const BlogPostPage = props => {
   const cover = get(frontmatter, 'image.children.0.fixed', {});
   return (
     <Container>
-      <BlogTitle />
       <Segment vertical style={{ border: 'none' }}>
         <Item.Group>
           <Item>
