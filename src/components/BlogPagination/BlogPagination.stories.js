@@ -1,0 +1,33 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import * as React from 'react';
+import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
+import { withKnobs, number } from '@storybook/addon-knobs';
+import BlogPagination from './BlogPagination';
+import { resolve } from 'path';
+
+const LinkStub = props => (
+  <div {...props} onClick={action(props.to.toString())}>
+    {props.children}
+  </div>
+);
+
+storiesOf('BlogPagination', module)
+  .addDecorator(withKnobs)
+  .addParameters({
+    fileName: resolve(__dirname, 'README.md'),
+  })
+  .add('default', () => {
+    const activePage = number('activePage', 1);
+    const pathname = `/blog/page/${activePage}/`;
+    const pageCount = number('pageCount', 10);
+
+    return (
+      <BlogPagination
+        pathname={pathname}
+        Link={LinkStub}
+        pageCount={pageCount}
+      />
+    );
+  });
