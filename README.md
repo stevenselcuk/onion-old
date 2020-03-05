@@ -2,6 +2,9 @@
 
 ## Onion the Gatsby Stater. It helps you create your new static website, portfolio thing, documentation book or blog. 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4e347905-c914-4073-80e7-266ae7a6a10a/deploy-status)](https://app.netlify.com/sites/theonion/deploys)
+
+Live Demo : [https://theonion.netlify.com/](https://theonion.netlify.com/)
 ***
 ## What's in the box? 📦 (except an 🧅)
 
@@ -26,6 +29,9 @@
 
 ## Get your own 🧅
 ***
+
+[![Netlify Status](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stevenselcuk/onion)
+
 
 ### 😒 Long and boring way
 
