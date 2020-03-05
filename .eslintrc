@@ -18,6 +18,7 @@
     "extends": [
       "eslint:recommended",
       "plugin:react/recommended",
+      "gatsby-standard"
  //     "plugin:jsx-a11y/recommended"
     ],
     "plugins": ["prettier"],
