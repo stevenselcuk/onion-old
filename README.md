@@ -27,12 +27,12 @@ Live Demo : [https://theonion.netlify.com/](https://theonion.netlify.com/)
 - [X] 🔥 Sitemap ready for blog post
 - [X] 🔥 RSS feed ready for blog post
 
-## Get your own 🧅
-***
+## Get your own onion 🧅
+
 
 [![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stevenselcuk/onion)
 
-
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/stevenselcuk/onion)
 
 ### 😒 Long and boring way
 
@@ -45,18 +45,9 @@ git clone git@github.com:stevenselcuk/onion.git your-awesome-site-name
 cd my-site
 yarn install
 
-# To develop
+# To start develop your awesome site
 yarn develop
 
-# To build
+# To build it
 yarn build
-
-# To test SSR (for Lighthouse etc.)
-yarn ssr
-
-# To format JS (precommit)
-yarn format
-
-# To generate favicons (included in `build`)
-yarn build:favicons
 ```
