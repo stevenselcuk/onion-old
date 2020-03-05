@@ -1,6 +1,6 @@
-import { addDecorator, configure } from '@storybook/react'
-import { setOptions } from '@storybook/addon-options'
-import 'react-chromatic/storybook-addon'
+import { addDecorator, configure } from '@storybook/react';
+import { setOptions } from '@storybook/addon-options';
+import 'react-chromatic/storybook-addon';
 
 // Option defaults:
 setOptions({
@@ -65,13 +65,11 @@ setOptions({
    * ID to select an addon panel
    * @type {String}
    */
-  selectedAddonPanel: undefined // The order of addons in the "Addons Panel" is the same as you import them in 'addons.js'. The first panel will be opened by default as you run Storybook
-})
-
+  selectedAddonPanel: undefined, // The order of addons in the "Addons Panel" is the same as you import them in 'addons.js'. The first panel will be opened by default as you run Storybook
+});
 
 function loadStories() {
-  require('./requireStories!./empty')
+  require('./requireStories!./empty');
 }
 
-
-configure(loadStories, module)
+configure(loadStories, module);

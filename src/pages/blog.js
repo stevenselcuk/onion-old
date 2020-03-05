@@ -76,8 +76,6 @@ const BlogPage = props => {
 
   return (
     <Container>
-
-
       {/* Content */}
       <Segment vertical>
         <Grid padded style={{ justifyContent: 'space-around' }}>
@@ -91,8 +89,7 @@ const BlogPage = props => {
               />
             </Segment>
           </div>
-          <div>
-          </div>
+          <div></div>
         </Grid>
       </Segment>
     </Container>

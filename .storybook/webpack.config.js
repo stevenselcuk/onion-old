@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = async ({ config }) => {
   config.module.rules.push({
@@ -8,16 +8,16 @@ module.exports = async ({ config }) => {
         loader: require.resolve('@storybook/source-loader'),
         options: {
           prettierConfig: {
-            parser: 'babel'
-          }
-        }
-      }
+            parser: 'babel',
+          },
+        },
+      },
     ],
-    enforce: 'pre'
-  })
+    enforce: 'pre',
+  });
 
   // eslint-disable-next-line no-param-reassign
-  config.resolve.alias.hestia = path.resolve(__dirname, '../src')
+  config.resolve.alias.hestia = path.resolve(__dirname, '../src');
 
-  return config
-}
+  return config;
+};

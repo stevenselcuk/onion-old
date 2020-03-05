@@ -4,9 +4,9 @@ import Adapter from 'enzyme-adapter-react-16';
 import React from 'react';
 import BlogPagination from './BlogPagination';
 
-configure({adapter: new Adapter()});
+configure({ adapter: new Adapter() });
 
-const LinkStub = (props) => <div {...props} />;
+const LinkStub = props => <div {...props} />;
 
 describe('BlogPagination component', () => {
   it('should render nothing if only 1 page', () => {

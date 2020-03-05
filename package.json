@@ -87,7 +87,9 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
     "gatsby-plugin-eslint": "^2.0.8",
+    "husky": "^4.2.3",
     "jest": "^25.1.0",
+    "lint-staged": "^10.0.8",
     "prettier": "^1.19.1",
     "react-chromatic": "^0.8.4",
     "react-test-renderer": "^16.13.0",
@@ -110,7 +112,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"./src/**/*.{js,jsx,json,md}\"",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
     "start": "npm run develop",
@@ -119,6 +121,21 @@
     "test": "jest",
     "storybook": "NODE_PATH=src start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o public/docs"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --fix ./src",
+      "git add"
+    ],
+    "*.css": [
+      "stylelint"
+    ]
   },
   "jest": {
     "globals": {
