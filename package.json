@@ -52,6 +52,9 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
     "@storybook/addon-a11y": "^5.2.1",
     "@storybook/addon-actions": "^5.2.1",
     "@storybook/addon-info": "^5.2.6",
@@ -64,8 +67,14 @@
     "@storybook/react": "^5.2.6",
     "@storybook/source-loader": "^5.2.6",
     "@storybook/storybook-deployer": "^2.8.1",
+    "@testing-library/react": "^9.5.0",
     "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "chai": "^4.2.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "eslint": "^6.8.0",
+    "eslint-config-gatsby-standard": "^2.2.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.20.1",
@@ -73,8 +82,17 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.3",
     "gatsby-plugin-eslint": "^2.0.8",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1",
-    "react-chromatic": "^0.8.4"
+    "react-chromatic": "^0.8.4",
+    "react-test-renderer": "^16.13.0",
+    "sinon": "^9.0.0",
+    "storybook-readme": "^5.0.8",
+    "stylelint": "^13.2.0",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.10.0"
   },
   "keywords": [
     "gatsby",
@@ -93,9 +111,32 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "test": "jest",
     "storybook": "NODE_PATH=src start-storybook -p 9001 -c .storybook",
     "storybook:build": "build-storybook -c .storybook -o public/docs"
+  },
+  "jest": {
+    "globals": {
+      "__LINK_PREFIX__": "",
+      "__PREFIX_LINKS__": ""
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(js|jsx)$",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/public/",
+      "/templates/",
+      "/.cache"
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text",
+      "html"
+    ]
   },
   "repository": {
     "type": "git",
