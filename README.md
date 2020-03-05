@@ -1,6 +1,18 @@
-# 🧅 onion
+<p align="center">
+  <a href="https://github.com/stevenselcuk/onion">
+    <img
+      src="https://i.imgur.com/LKckQpu.png"
+      height="120"
+      alt="theOnion"
+      title="Onion the Gatsby Starter"
+    />
+  </a>
+</p>
 
-## Onion the Gatsby Stater. It helps you create your new static website, portfolio thing, documentation book or blog. 
+<p align="center">
+   the<em>Onion</em> is your new Gatsby Stater. It helps you create your new static website, portfolio thing, documentation book or blog with tons of features. Just change config, add your content and... Ta-Daaa! 
+</p>
+
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4e347905-c914-4073-80e7-266ae7a6a10a/deploy-status)](https://app.netlify.com/sites/theonion/deploys) [![Build Status](https://travis-ci.org/stevenselcuk/onion.svg?branch=master)](https://travis-ci.org/stevenselcuk/onion) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8b0835e049754e8fb92eb677b6383bd7)](https://www.codacy.com/manual/stevenjselcuk/onion?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=stevenselcuk/onion&amp;utm_campaign=Badge_Grade) [![Maintainability](https://api.codeclimate.com/v1/badges/d1f98960e51cf320839b/maintainability)](https://codeclimate.com/github/stevenselcuk/onion/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d1f98960e51cf320839b/test_coverage)](https://codeclimate.com/github/stevenselcuk/onion/test_coverage)
 
