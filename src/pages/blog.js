@@ -1,6 +1,5 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
-import { StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql, Link } from 'gatsby';
 import {
   Header,
   Grid,
@@ -11,8 +10,6 @@ import {
   Segment,
   Comment,
 } from 'semantic-ui-react';
-import BlogTitle from '../components/BlogTitle';
-import TagsCard from '../components/TagsCard/TagsCard';
 import BlogPagination from '../components/BlogPagination/BlogPagination';
 import { get } from 'lodash';
 import withLayout from '../components/Layout';
@@ -79,8 +76,7 @@ const BlogPage = props => {
 
   return (
     <Container>
-      {/* Title */}
-      <BlogTitle />
+
 
       {/* Content */}
       <Segment vertical>
@@ -96,7 +92,6 @@ const BlogPage = props => {
             </Segment>
           </div>
           <div>
-            <TagsCard Link={Link} tags={tags} tag={props.pageContext.tag} />
           </div>
         </Grid>
       </Segment>
