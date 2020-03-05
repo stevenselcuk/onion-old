@@ -2,7 +2,7 @@
 
 ## Onion the Gatsby Stater. It helps you create your new static website, portfolio thing, documentation book or blog. 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4e347905-c914-4073-80e7-266ae7a6a10a/deploy-status)](https://app.netlify.com/sites/theonion/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4e347905-c914-4073-80e7-266ae7a6a10a/deploy-status)](https://app.netlify.com/sites/theonion/deploys) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8b0835e049754e8fb92eb677b6383bd7)](https://www.codacy.com/manual/stevenjselcuk/onion?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=stevenselcuk/onion&amp;utm_campaign=Badge_Grade) [![Maintainability](https://api.codeclimate.com/v1/badges/d1f98960e51cf320839b/maintainability)](https://codeclimate.com/github/stevenselcuk/onion/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d1f98960e51cf320839b/test_coverage)](https://codeclimate.com/github/stevenselcuk/onion/test_coverage)
 
 Live Demo : [https://theonion.netlify.com/](https://theonion.netlify.com/)
 ***
@@ -30,7 +30,8 @@ Live Demo : [https://theonion.netlify.com/](https://theonion.netlify.com/)
 ## Get your own 🧅
 ***
 
-[![Netlify Status](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stevenselcuk/onion)
+[![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stevenselcuk/onion)
+
 
 
 ### 😒 Long and boring way
