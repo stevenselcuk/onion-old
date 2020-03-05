@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 const Row = styled.div`
   display: flex;
   align-items: center;
@@ -6,4 +6,4 @@ const Row = styled.div`
   flex-direction: row;
 `;
 
-export default Row
+export default Row;

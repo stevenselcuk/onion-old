@@ -1,4 +1,4 @@
-import { configure } from '@storybook/react'
+import { addDecorator, configure } from '@storybook/react'
 import { setOptions } from '@storybook/addon-options'
 import 'react-chromatic/storybook-addon'
 
@@ -8,12 +8,12 @@ setOptions({
    * Name to display in the top left corner
    * @type {String}
    */
-  name: 'Onion',
+  name: '🧅 theOnion',
   /**
    * URL for name in top left corner to link to
    * @type {String}
    */
-  url: 'https://github.com/stevenselcuk/hestia',
+  url: 'https://github.com/stevenselcuk/onion',
   /**
    * Show story component as full screen
    * @type {Boolean}
@@ -68,8 +68,10 @@ setOptions({
   selectedAddonPanel: undefined // The order of addons in the "Addons Panel" is the same as you import them in 'addons.js'. The first panel will be opened by default as you run Storybook
 })
 
+
 function loadStories() {
   require('./requireStories!./empty')
 }
+
 
 configure(loadStories, module)

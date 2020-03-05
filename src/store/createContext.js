@@ -1,7 +1,7 @@
 import React from 'react';
 export const Context = React.createContext({
   theme: 'Dark',
-  changeTheme: () => {}
+  changeTheme: () => {},
 });
 
 export const Provider = ({ children }) => {

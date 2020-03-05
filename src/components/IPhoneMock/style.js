@@ -12,7 +12,7 @@ export const Phone = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 99;
-  transform: scale(1.05)
+  transform: scale(1.05);
 `;
 export const AppWrapper = styled.div`
   height: calc(100vw - 100px);
@@ -25,14 +25,13 @@ export const AppWrapper = styled.div`
     hsl(${props => props.hue - 305}, 64%, 60%)
   );
   border-radius: 40px;
-  box-shadow: 0px 20px 40px rgba(63,59,86,0.9);
+  box-shadow: 0px 20px 40px rgba(63, 59, 86, 0.9);
   transition: transform 300ms ease-in-out;
   will-change: transform;
   transform: rotate(-10deg);
   &:hover {
     transform: rotate(10deg);
   }
-
 `;
 
 export const AppContent = styled.div`

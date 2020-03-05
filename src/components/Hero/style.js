@@ -1,8 +1,8 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 import { boxsBackgroundColor, textsColor } from '../../style/theme';
 import device from '../../style/device';
 
-export const Wrapper  = styled.div`
+export const Wrapper = styled.div`
   height: 100vh;
   width: 100vw;
   background: linear-gradient(
@@ -12,17 +12,16 @@ export const Wrapper  = styled.div`
   );
   background: #C3CFE2;
   color: ${textsColor};
+  position: relative;
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding-left:20px;
-  padding-right:20px;
+
 
   ${device.phone`
-  padding-left:40px;
-  padding-right:40px;
+
 	`}
 
   ${device.tablet`
@@ -33,14 +32,11 @@ export const Wrapper  = styled.div`
 
 	`}
 
-`
+`;
 
+export const Left = styled.div`
+  padding-left: 20px;
+  padding-right: 20px;
+`;
 
-export const Left  = styled.div`
-display:block;
-`
-
-
-export const Right  = styled.div`
-
-`
+export const Right = styled.div``;

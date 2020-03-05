@@ -1,15 +1,10 @@
 import React, { useEffect } from 'react';
 import { Title } from './style';
 
-const HugeTitle = ({children}) => {
-  useEffect(() => {
-  }, []);
+const HugeTitle = ({ children }) => {
+  useEffect(() => {}, []);
 
-  return (
-    <Title>
-      {children}
-    </Title>
-  );
+  return <Title>{children}</Title>;
 };
 
 export default HugeTitle;

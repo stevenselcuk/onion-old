@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { FiGithub } from 'react-icons/fi';
 import withLayout from '../components/Layout';
 import Hero from '../components/Hero';
-import {Row} from '../components/Primitives';
+import { Row } from '../components/Primitives';
 import Phone from '../components/IPhoneMock';
 import HugeTitle from '../components/HugeTitle';
 import CoolLink from '../components/Link';

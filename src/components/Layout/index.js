@@ -51,7 +51,7 @@ const withLayout = WrappedComponent =>
               }
             `}
             render={data => (
-              <Wrapper>
+              <Wrapper className={'onion'}>
                 <WrappedComponent
                   siteMeta={data}
                   data={this.state}

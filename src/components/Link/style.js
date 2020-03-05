@@ -1,12 +1,10 @@
 import styled from 'styled-components';
 import { boxsBackgroundColor, textsColor } from '../../style/theme';
 
-export const WrapperWithLink = styled.a`
-
-`;
+export const WrapperWithLink = styled.a``;
 
 export const Button = styled.div`
-width: ${props => props.size === 'Big' ? '300px' : '120px'} ;
+  width: ${props => (props.size === 'Big' ? '300px' : '120px')};
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 16px;
@@ -25,5 +23,4 @@ width: ${props => props.size === 'Big' ? '300px' : '120px'} ;
     transform: scale(1.01);
     box-shadow: 0px 20px 40px rgba(63, 59, 86, 0.6);
   }
-
 `;
