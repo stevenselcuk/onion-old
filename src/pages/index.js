@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Link } from 'gatsby';
+import posed, { PoseGroup } from 'react-pose';
 import styled from 'styled-components';
 import { FiGithub } from 'react-icons/fi';
 import withLayout from '../components/Layout';
@@ -25,6 +25,21 @@ export const ButtonWrapper = styled.div`
 export const FeaturesWrapper = styled.div`
   font-size: 14px;
 `;
+
+
+const PoseWrapper = posed.div({
+  enter: {
+    opacity: 1,
+    delay: 200,
+    transition: {
+      default: { duration: 300 }
+    }
+  },
+  exit: {
+    opacity: 0,
+    transition: { duration: 150 }
+  }
+});
 
 const TheOnion = () => {
   return (
@@ -63,10 +78,13 @@ const IndexPage = props => {
   }, []);
 
   return (
-    <div>
-      <Hero leftContent={<TheOnion />} rightContent={<About />} />
-      <Hero leftContent={<TheOnion />} rightContent={<About />} />
-    </div>
+    <PoseWrapper>
+
+<Hero leftContent={<TheOnion />} rightContent={<About />} />
+    </PoseWrapper>
+
+
+
   );
 };
 

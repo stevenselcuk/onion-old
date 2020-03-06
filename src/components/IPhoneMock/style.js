@@ -26,12 +26,7 @@ export const AppWrapper = styled.div`
   );
   border-radius: 40px;
   box-shadow: 0px 20px 40px rgba(63, 59, 86, 0.9);
-  transition: transform 300ms ease-in-out;
   will-change: transform;
-  transform: rotate(-10deg);
-  &:hover {
-    transform: rotate(10deg);
-  }
 `;
 
 export const AppContent = styled.div`
