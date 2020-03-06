@@ -7,17 +7,29 @@
       title="Onion the Gatsby Starter"
     />
   </a>
+
+
+
+<p align="center">
+   <h1>the<em>Onion</em></h1>
 </p>
 
 <p align="center">
-   the<em>Onion</em> is your new Gatsby Stater. It helps you create your new static website, portfolio thing, documentation book or blog with tons of features. Just change config, add your content and... Ta-Daaa! 
+   Your new Gatsby Stater is here 🙌. It helps you create your new static website, good looking portfolio thing, eyecandy documentation or blog with tons of features. Just change config, add your content and... Ta-Daaa! 🎉
 </p>
 
 
+<p align="center">
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4e347905-c914-4073-80e7-266ae7a6a10a/deploy-status)](https://app.netlify.com/sites/theonion/deploys) [![Build Status](https://travis-ci.org/stevenselcuk/onion.svg?branch=master)](https://travis-ci.org/stevenselcuk/onion) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8b0835e049754e8fb92eb677b6383bd7)](https://www.codacy.com/manual/stevenjselcuk/onion?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=stevenselcuk/onion&amp;utm_campaign=Badge_Grade) [![Maintainability](https://api.codeclimate.com/v1/badges/d1f98960e51cf320839b/maintainability)](https://codeclimate.com/github/stevenselcuk/onion/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/d1f98960e51cf320839b/test_coverage)](https://codeclimate.com/github/stevenselcuk/onion/test_coverage)
 
-Live Demo : [https://theonion.netlify.com/](https://theonion.netlify.com/)
+</p>
+
+Are you interested? 👀 Live Demo : [https://theonion.netlify.com/](https://theonion.netlify.com/)
+
+
 ***
+
 ## What's in the box? 📦 (except an 🧅)
 
 ### Main Features
@@ -29,7 +41,7 @@ Live Demo : [https://theonion.netlify.com/](https://theonion.netlify.com/)
 
 ### Dev Features
 - [X] 🔥Styled-components
-- [X] 🔥Storybook
+- [X] 🔥Storybook ( See all available components : [https://theonion.netlify.com/docs](https://theonion.netlify.com/docs) )
 
 ### Structure
 - [X] 🔥 Blog Posts w/ pagination
@@ -39,12 +51,11 @@ Live Demo : [https://theonion.netlify.com/](https://theonion.netlify.com/)
 - [X] 🔥 Sitemap ready for blog post
 - [X] 🔥 RSS feed ready for blog post
 
+
 ## Get your own onion 🧅
 
 
-[![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stevenselcuk/onion)
-
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/stevenselcuk/onion)
+[![](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/stevenselcuk/onion) [![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/stevenselcuk/onion)
 
 ### 😒 Long and boring way
 
