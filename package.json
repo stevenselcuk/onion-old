@@ -112,7 +112,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"./src/**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"./src/**/*.{js,jsx,md}\"",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
     "start": "npm run develop",
@@ -120,7 +120,7 @@
     "clean": "gatsby clean",
     "test": "jest",
     "storybook": "NODE_PATH=src start-storybook -p 9001 -c .storybook",
-    "storybook:build": "build-storybook -c .storybook -o public/docs"
+    "storybook:build": "build-storybook -c .storybook -o public/components"
   },
   "husky": {
     "hooks": {
