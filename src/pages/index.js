@@ -10,6 +10,8 @@ import HugeTitle from '../components/HugeTitle';
 import CoolLink from '../components/Link';
 import Spacer from '../components/Spacer';
 import Divider from '../components/Divider';
+import NetlifyIcon from '../../static/images/netlify.svg'
+import NowIcon from '../../static/images/now.svg'
 
 export const LeftPosition = styled.div`
   display: flex;
@@ -23,11 +25,13 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const FeaturesWrapper = styled.div`
-  font-size: 14px;
+  font-size: 16px;
+  margin-top: 40px;
+
 `;
 
 
-const AnimatedOnion = posed.div({
+const AnimatedOnion = posed.img({
   hoverable: true,
   draggable: true,
   pressable: true,
@@ -61,15 +65,9 @@ const PoseWrapper = posed.div({
 const TheOnion = () => {
   return (
     <LeftPosition>
-      <HugeTitle><AnimatedOnion><img src={'./images/icon.png'}/></AnimatedOnion> theOnion</HugeTitle>
+      <HugeTitle><AnimatedOnion src={'./images/icon.png'} /> theOnion</HugeTitle>
       <FeaturesWrapper>
-        <div>😢makes you cry.</div>
-        <div>👍🏻no PHP. Only includes Javascript. FAA approved.</div>
-        <div>🔪minced using option.</div>
-        <div>🦠fights against Corona Virus.</div>
-        <div>🧠thinks fast.</div>
-        <div>👃smells like onion.</div>
-        <div>🔌batteries included.</div>
+        <div>Gatsby Starter for your awesome product 🙌</div>
       </FeaturesWrapper>
 
       <Spacer size={'Big'} />
@@ -77,11 +75,11 @@ const TheOnion = () => {
       <Spacer size={'Big'} />
 
       <Row>
-        <CoolLink size={'Big'} go={'https://google.com'}>
-          🎉 Download
+        <CoolLink go={'https://zeit.co/import/project?template=https://github.com/stevenselcuk/onion'}>
+          <NowIcon/> Deploy to Now.sh
         </CoolLink>
-        <CoolLink go={'https://github.com/stevenselcuk'}>
-          <FiGithub /> Github
+        <CoolLink go={'https://app.netlify.com/start/deploy?repository=https://github.com/stevenselcuk/onion'}>
+          <NetlifyIcon /> Deploy to Netlify
         </CoolLink>
       </Row>
     </LeftPosition>

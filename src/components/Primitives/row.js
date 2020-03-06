@@ -2,7 +2,7 @@ import styled from 'styled-components';
 const Row = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: ${props => (props.center === true ? 'space-between' : 'flex-start')};;
   flex-direction: row;
 `;
 
