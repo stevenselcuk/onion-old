@@ -27,6 +27,23 @@ export const FeaturesWrapper = styled.div`
 `;
 
 
+const AnimatedOnion = posed.div({
+  hoverable: true,
+  draggable: true,
+  pressable: true,
+  init: { scale: 1 },
+  hover: { scale: 1.1 },
+  drag: { scale: 0.9 },
+  press: { scale: 0.9 },
+  dragEnd: {
+    x: 0,
+    y: 0,
+    transition: { type: 'spring', stiffness: 1000, damping: 5 },
+  }
+});
+
+
+
 const PoseWrapper = posed.div({
   enter: {
     opacity: 1,
@@ -44,7 +61,7 @@ const PoseWrapper = posed.div({
 const TheOnion = () => {
   return (
     <LeftPosition>
-      <HugeTitle>🧅 theOnion</HugeTitle>
+      <HugeTitle><AnimatedOnion><img src={'./images/icon.png'}/></AnimatedOnion> theOnion</HugeTitle>
       <FeaturesWrapper>
         <div>😢makes you cry.</div>
         <div>👍🏻no PHP. Only includes Javascript. FAA approved.</div>

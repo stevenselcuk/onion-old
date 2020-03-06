@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { boxsBackgroundColor, textsColor } from '../../style/theme';
+import device from '../../style/device';
 
 export const Phone = styled.div`
   position: relative;
@@ -15,10 +15,24 @@ export const Phone = styled.div`
   transform: scale(1.05);
 `;
 export const AppWrapper = styled.div`
-  height: calc(100vw - 100px);
-  width: calc((100vw - 100px) / 2.01);
+  height: calc(100vw - 125px);
+  width: calc((100vw - 125px) / 2.01);
   max-height: calc(550px * 2.01);
   max-width: 550px;
+
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    height: calc(100vw - 50px);
+  width: calc((100vw - 50px) / 2.01);
+  border-radius: 10px;
+}
+
+
+${device.lessThan("phone")`
+    border-radius: 10px;
+  `}
+
+
   background: linear-gradient(
     20deg,
     hsl(${props => props.hue}, 60%, 65%),

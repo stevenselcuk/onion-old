@@ -1,11 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
-import { accent } from './theme';
+import { boxsBackgroundColor, textsColor } from './theme';
 
 export default createGlobalStyle`
-
-@-ms-viewport{
-  width: device-width;
-}
 
  *,
   *:before,
@@ -65,14 +61,14 @@ export default createGlobalStyle`
     display: block;
   }
   html {
-    font-size: 62.5%;
+
   }
   body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     line-height: 1.45;
-    color: #000;
-    background-color: #fff;
+    color: ${textsColor};
+    background: ${boxsBackgroundColor};
     -webkit-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -80,11 +76,12 @@ export default createGlobalStyle`
     -webkit-font-feature-settings: "pnum";
     font-feature-settings: "pnum";
     font-variant-numeric: proportional-nums;
+
   }
 
   ::selection {
-    background-color: #222;
-    color: white;
+    background-color: ${textsColor};
+    color: ${boxsBackgroundColor};
 }
 
   article {

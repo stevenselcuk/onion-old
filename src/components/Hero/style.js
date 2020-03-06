@@ -5,38 +5,33 @@ import device from '../../style/device';
 export const Wrapper = styled.div`
   height: 100vh;
   width: 100vw;
+  /**
   background: linear-gradient(
     20deg,
     hsl(${props => props.hue}, 60%, 65%),
     hsl(${props => props.hue - 305}, 64%, 60%)
   );
-  background: #C3CFE2;
+  */
   color: ${textsColor};
   position: relative;
   display:flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap:   wrap-reverse;
   justify-content: space-around;
   align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
 
+  > div {
+    padding-left: 10px;
+  padding-right: 10px;
+  }
 
-  ${device.phone`
-
-	`}
-
-  ${device.tablet`
-
-	`}
-
-  ${device.desktop`
-
-	`}
 
 `;
 
 export const Left = styled.div`
-  padding-left: 20px;
-  padding-right: 20px;
+
 `;
 
 export const Right = styled.div``;

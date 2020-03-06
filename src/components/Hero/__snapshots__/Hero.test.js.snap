@@ -4,12 +4,12 @@ exports[`Hero component should render nothing if only 1 page 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
-      "class": "sc-AxjAm fcodvA",
+      "class": "sc-AxjAm jrGigH",
     },
     "children": Array [
       Object {
         "attribs": Object {
-          "class": "sc-AxirZ cWSZf",
+          "class": "sc-AxirZ idrxSW",
         },
         "children": Array [
           Object {
@@ -92,7 +92,7 @@ initialize {
         "parent": [Circular],
         "prev": Object {
           "attribs": Object {
-            "class": "sc-AxirZ cWSZf",
+            "class": "sc-AxirZ idrxSW",
           },
           "children": Array [
             Object {

@@ -1,7 +1,7 @@
 import theme from 'styled-theming';
 
 export const boxsBackgroundColor = theme('mode', {
-  Light: '#F1F1F1',
+  Light: '#E5E6E8',
   //  Dark: '#202020',
   Dark: '#E5E6E8',
 });
