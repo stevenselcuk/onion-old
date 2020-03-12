@@ -1,6 +1,10 @@
 const path = require('path');
+const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin');
 
 module.exports = async ({ config }) => {
+
+
+
   config.module.rules.push({
     test: /\.stories\.js$|\/stories\/.*\.js$/,
     loaders: [

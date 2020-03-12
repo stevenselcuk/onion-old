@@ -1,10 +1,10 @@
 const path = require('path');
 
 module.exports = {
-  siteTitle: 'Gatsby Universal',
-  siteTitleShort: 'GatsbyU',
+  siteTitle: 'theOnion',
+  siteTitleShort: 'Starting point for building yournext website',
   siteDescription: 'An opinionated starter for Gatsby.',
-  siteUrl: 'https://gu.fabianschultz.com',
+  siteUrl: 'https://theonion.netlify.com',
   themeColor: '#000',
   backgroundColor: '#fff',
   pathPrefix: null,

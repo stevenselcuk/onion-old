@@ -3,12 +3,11 @@ import posed from 'react-pose';
 import PropTypes from 'prop-types';
 import { Button, WrapperWithLink } from './style';
 
-
 const Box = posed(WrapperWithLink)({
   hoverable: true,
   pressable: true,
   transition: {
-    default: { type: 'spring', stiffness: 2000, damping: 15 }
+    default: { type: 'spring', stiffness: 2000, damping: 15 },
   },
   init: {
     scale: 1,
@@ -18,7 +17,7 @@ const Box = posed(WrapperWithLink)({
   },
   press: {
     scale: 0.9,
-  }
+  },
 });
 
 const Link = ({ go, children, size }) => {
@@ -32,7 +31,7 @@ const Link = ({ go, children, size }) => {
 Link.propTypes = {
   go: PropTypes.string.isRequired,
   children: PropTypes.node,
-  size: PropTypes.string
+  size: PropTypes.string,
 };
 
 export default Link;

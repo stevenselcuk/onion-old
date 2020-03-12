@@ -8,8 +8,8 @@ const AnimatedContainer = posed.div({
     delay: 400,
     transition: {
       rotate: { type: 'spring', stiffness: 1000, damping: 5 },
-      default: { duration: 300 }
-    }
+      default: { duration: 300 },
+    },
   },
   exit: {
     rotate: '-10deg',
@@ -19,16 +19,14 @@ const AnimatedContainer = posed.div({
   },
 });
 
-
 const MockUp = ({ phoneURI }) => {
   return (
     <AnimatedContainer>
-    <AppWrapper hue={149}>
-      <AppContent></AppContent>
-      <Phone phoneURI={phoneURI}> </Phone>
-    </AppWrapper>
+      <AppWrapper hue={149}>
+        <AppContent></AppContent>
+        <Phone phoneURI={phoneURI}> </Phone>
+      </AppWrapper>
     </AnimatedContainer>
-
   );
 };
 

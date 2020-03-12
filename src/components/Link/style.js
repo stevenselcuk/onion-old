@@ -16,10 +16,10 @@ export const Button = styled.div`
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap:nowrap;
+  flex-wrap: nowrap;
 
   &:hover {
     box-shadow: 0px 20px 40px rgba(63, 59, 86, 0.6);
@@ -29,8 +29,5 @@ export const Button = styled.div`
     height: 18px;
     padding-right: 10px;
     fill: ${boxsBackgroundColor};
-
   }
-
-
 `;

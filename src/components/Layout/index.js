@@ -7,8 +7,6 @@ import GlobalStyle from '../../style/globalStyle';
 import { Wrapper } from './style';
 import Helmet from '../Head';
 
-
-
 const withLayout = WrappedComponent =>
   class WithLayout extends React.Component {
     state = {
@@ -39,12 +37,12 @@ const withLayout = WrappedComponent =>
             `}
             render={data => (
               <Wrapper className={'onion'}>
-                    <WrappedComponent
-                      siteMeta={data}
-                      data={this.state}
-                      location={this.props.location}
-                      {...this.props}
-                    />
+                <WrappedComponent
+                  siteMeta={data}
+                  data={this.state}
+                  location={this.props.location}
+                  {...this.props}
+                />
               </Wrapper>
             )}
           />

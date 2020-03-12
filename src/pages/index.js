@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
-import posed, { PoseGroup } from 'react-pose';
+import posed from 'react-pose';
 import styled from 'styled-components';
-import { FiGithub } from 'react-icons/fi';
 import withLayout from '../components/Layout';
 import Hero from '../components/Hero';
 import { Row } from '../components/Primitives';
@@ -10,8 +9,8 @@ import HugeTitle from '../components/HugeTitle';
 import CoolLink from '../components/Link';
 import Spacer from '../components/Spacer';
 import Divider from '../components/Divider';
-import NetlifyIcon from '../../static/images/netlify.svg'
-import NowIcon from '../../static/images/now.svg'
+import NetlifyIcon from '../../static/images/netlify.svg';
+import NowIcon from '../../static/images/now.svg';
 
 export const LeftPosition = styled.div`
   display: flex;
@@ -27,9 +26,7 @@ export const ButtonWrapper = styled.div`
 export const FeaturesWrapper = styled.div`
   font-size: 16px;
   margin-top: 40px;
-
 `;
-
 
 const AnimatedOnion = posed.img({
   hoverable: true,
@@ -43,29 +40,29 @@ const AnimatedOnion = posed.img({
     x: 0,
     y: 0,
     transition: { type: 'spring', stiffness: 1000, damping: 5 },
-  }
+  },
 });
-
-
 
 const PoseWrapper = posed.div({
   enter: {
     opacity: 1,
     delay: 200,
     transition: {
-      default: { duration: 300 }
-    }
+      default: { duration: 300 },
+    },
   },
   exit: {
     opacity: 0,
-    transition: { duration: 150 }
-  }
+    transition: { duration: 150 },
+  },
 });
 
 const TheOnion = () => {
   return (
     <LeftPosition>
-      <HugeTitle><AnimatedOnion src={'./images/icon.png'} /> theOnion</HugeTitle>
+      <HugeTitle>
+        <AnimatedOnion src={'./images/icon.png'} /> theOnion
+      </HugeTitle>
       <FeaturesWrapper>
         <div>Gatsby Starter for your awesome product 🙌</div>
       </FeaturesWrapper>
@@ -75,10 +72,18 @@ const TheOnion = () => {
       <Spacer size={'Big'} />
 
       <Row>
-        <CoolLink go={'https://zeit.co/import/project?template=https://github.com/stevenselcuk/onion'}>
-          <NowIcon/> Deploy to Now.sh
+        <CoolLink
+          go={
+            'https://zeit.co/import/project?template=https://github.com/stevenselcuk/onion'
+          }
+        >
+          <NowIcon /> Deploy to Now.sh
         </CoolLink>
-        <CoolLink go={'https://app.netlify.com/start/deploy?repository=https://github.com/stevenselcuk/onion'}>
+        <CoolLink
+          go={
+            'https://app.netlify.com/start/deploy?repository=https://github.com/stevenselcuk/onion'
+          }
+        >
           <NetlifyIcon /> Deploy to Netlify
         </CoolLink>
       </Row>
@@ -94,12 +99,8 @@ const IndexPage = props => {
 
   return (
     <PoseWrapper>
-
-<Hero leftContent={<TheOnion />} rightContent={<About />} />
+      <Hero leftContent={<TheOnion />} rightContent={<About />} />
     </PoseWrapper>
-
-
-
   );
 };
 

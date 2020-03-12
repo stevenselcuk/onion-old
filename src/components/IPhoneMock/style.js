@@ -21,14 +21,13 @@ export const AppWrapper = styled.div`
   max-width: 550px;
 
   @media (min-width: 320px) and (max-width: 480px) {
-
-    height: calc(100vw - 50px);
+  height: calc(100vw - 50px);
   width: calc((100vw - 50px) / 2.01);
   border-radius: 10px;
 }
 
 
-${device.lessThan("phone")`
+${device.lessThan('phone')`
     border-radius: 10px;
   `}
 
